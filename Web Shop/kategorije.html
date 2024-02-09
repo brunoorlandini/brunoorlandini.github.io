@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategorije proizvoda</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css files/style.css">
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header-placeholder" class="main-font"></header>
+
+    
+
+
+<div id="test">
+
+  <aside id="aside-placeholder"></aside>
+
+    <div class="content">
+        <h1>Kategorije proizvoda</h1>
+
+        <h2>Programski tečajevi za početnike</h2>
+        <ul>
+            <li><a href="poc-programiranje.html">Osnove programiranja</a></li>
+            <li><a href="poc-python.html">Učenje Pythona za početnike</a></li>
+            <li><a href="poc-webrazvoj.html">Web razvoj za početnike</a></li>
+            <li><a href="poc-mobilno.html">Razvoj mobilnih aplikacija za početnike</a></li>
+        </ul>
+
+        <h2>Napredni programski tečajevi</h2>
+        <ul>
+            <li><a href="mid-js.html">Napredno programiranje u JavaScriptu</a></li>
+            <li><a href="mid-dubokoucenje.html">Napredno učenje dubokog učenja</a></li>
+            <li><a href="mid-webrazvoj.html">Napredne tehnike web razvoja</a></li>
+            <li><a href="mid-ai.html">Razvoj aplikacija s umjetnom inteligencijom</a></li>
+        </ul>
+
+        <h2>Specijalizirani tečajevi</h2>
+        <ul>
+            <li><a href="pro-igre.html">Razvoj igara</a></li>
+            <li><a href="pro-analiza.html">Analiza podataka i vizualizacija</a></li>
+            <li><a href="pro-kripto.html">Kriptovalute i blockchain tehnologija</a></li>
+            <li><a href="pro-sigurnost.html">Razvoj internetskih sigurnosnih vještina</a></li>
+        </ul>
+    </div>
+    </div>
+    <footer id="footer-placeholder"></footer>
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+            $("#aside-placeholder").load("aside.html");
+
+        });
+    </script>
+</body>
+</html>

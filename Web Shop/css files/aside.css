@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    color: #EEEEEE;
+  }
+  aside {
+    background-color: #393E46;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+ }
+
+  button{
+    padding: 5px;
+  }
+
+
+  
+  h2 {
+    color: #EEEEEE;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    display: block;
+    color: #EEEEEE;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+
+  a:hover{
+    color: #00ADB5 ;
+    text-decoration: none;
+    }
+
+#links{
+    width: 12vw;
+    align-self: center;
+}
+label{
+    padding-bottom:  10px;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+  
+
+  
+
+

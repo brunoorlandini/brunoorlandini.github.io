@@ -1,0 +1,31 @@
+.review-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #393E46;
+    border-radius: 10px;
+  }
+  
+  .review-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #00ADB5;
+    border-radius: 10px;
+  }
+  
+  .review-rating {
+    font-size: 24px;
+    color: #EEEEEE;
+  }
+  
+  .review-text {
+    margin-top: 10px;
+    color: #EEEEEE;
+  }
+  
+  .review-author {
+    margin-top: 10px;
+    font-style: italic;
+    color: #EEEEEE;
+  }
+  

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css files/style.css">
+    <style>
+        
+        .products{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        aside {
+            background-color: #393E46;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            position: sticky;
+            top: 40px;
+        }      
+
+
+        
+     .products img{
+        height: 200px;
+        width: 200px;
+     }
+    </style>
+    
+</head>
+<body>
+    <header id="header-placeholder"></header>
+    <aside>
+        <h3>Filteri proizvoda</h3>
+        <h4>Kategorije</h4>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox"> Programiranje
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"> Web razvoj
+                </label>
+            </li>
+        </ul>
+        <h4>Dodatni filtri</h4>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox"> Akcija
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"> Novo
+                </label>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <div class="products">
+            <div class="product-container">
+                <a href="poc-programiranje.html"><h3>Osnove programiranja</h3></a>
+                <img src="img/img1.jpg" alt="product-image">
+                <p>Osnove programiranja pružaju temeljno razumijevanje koncepta kodiranja i struktura programskih jezika.</p>
+                <p>€49.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="poc-python.html"><h3>Učenje Pythona za Početnike</h3></a>
+                <img src="img/img2.jpg" alt="product-image">
+                <p>Učenje Pythona za početnike osmišljeno je kako bi se naučilo osnove Python programiranja korak po korak.</p>
+                <p>€59.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="poc-webrazvoj.html"><h3>Web razvoj za početnike</h3></a>
+                <img src="img/img3.jpg" alt="product-image">
+                <p>Web razvoj za početnike obuhvaća osnove HTML-a, CSS-a i JavaScripta za izradu atraktivnih web stranica.</p>
+                <p>€69.99</p>
+                <button>Vidi više</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-container">
+                <a href="poc-mobilno.html"><h3>Razvoj mobilnih aplikacija za početnike</h3></a>
+                <img src="img/img4.jpg" alt="product-image">
+                <p>Razvoj mobilnih aplikacija za početnike omogućuje izradu mobilnih aplikacija za različite platforme.</p>
+                <p>€79.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="mid-js.html"><h3>Napredno programiranje u JavaScriptu</h3></a>
+                <img src="img/img5.jpg" alt="product-image">
+                <p>Napredno programiranje u JavaScriptu proučava složenije koncepte jezika koji su ključni za profesionalni web razvoj.</p>
+                <p>€89.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="mid-dubokoucenje.html"><h3>Napredno učenje dubokog učenja</h3></a>
+                <img src="img/img6.jpg" alt="product-image">
+                <p>Napredno učenje dubokog učenja istražuje napredne tehnike neuronskih mreža i njihovu primjenu u praksi.</p>
+                <p>€99.99</p>
+                <button>Vidi više</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-container">
+                <a href="mid-webrazvoj.html"><h3>Napredne tehnike web razvoja</h3></a>
+                <img src="img/img7.jpg" alt="product-image">
+                <p>Napredne tehnike web razvoja uključuju upotrebu modernih alata i tehnika za izradu kompleksnih web aplikacija.</p>
+                <p>€89.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="mid-ai.html"><h3>Razvoj aplikacija s umjetnom inteligencijom</h3></a>
+                <img src="img/img8.jpg" alt="product-image">
+                <p>Razvoj aplikacija s umjetnom inteligencijom istražuje primjenu AI tehnologija u izradi pametnih aplikacija.</p>
+                <p>€99.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="pro-igre.html"><h3>Razvoj igara</h3></a>
+                <img src="img/img9.jpg" alt="product-image">
+                <p>Razvoj igara pruža mogućnost stvaranja zabavnih i interaktivnih igara za različite platforme.</p>
+                <p>€79.99</p>
+                <button>Vidi više</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-container">
+                <a href="pro-analiza.html"><h3>Analiza podataka i vizualizacija</h3></a>
+                <img src="img/img10.jpg" alt="product-image">
+                <p>Analiza podataka i vizualizacija istražuje tehnike za obradu i interpretaciju podataka te njihovu prezentaciju putem grafova i dijagrama.</p>
+                <p>€89.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="pro-kripto.html"><h3>Kriptovalute i blockchain tehnologija</h3></a>
+                <img src="img/img11.jpg" alt="product-image">
+                <p>Kriptovalute i blockchain tehnologija istražuju koncepte digitalnih valuta i tehnologije iza njihove distribuirane knjige transakcija.</p>
+                <p>€79.99</p>
+                <button>Vidi više</button>
+            </div>
+            <div class="product-container">
+                <a href="pro-sigurnost.html"><h3>Razvoj internetskih sigurnosnih vještina</h3></a>
+                <img src="img/img12.jpg" alt="product-image">
+                <p>Razvoj internetskih sigurnosnih vještina obuhvaća praksu zaštite sustava, mreža i podataka od cyber prijetnji i napada.</p>
+                <p>€69.99</p>
+                <button>Vidi više</button>
+            </div>
+        </div>
+    </div>
+    
+       
+    <footer id="footer-placeholder"></footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("../header.html");
+            $("#footer-placeholder").load("../footer.html");
+        });
+    </script>
+</body>
+</html>

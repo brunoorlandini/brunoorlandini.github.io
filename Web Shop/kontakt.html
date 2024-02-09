@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css files/style.css">
+   
+
+</head>
+
+<body>
+
+    <header id="header-placeholder" class="main-font"></header>
+
+    
+
+
+    <div id="test">
+    
+      <aside id="aside-placeholder"></aside>
+    
+
+
+    
+    <div class="content">
+        <h1>Kontaktirajte nas</h1>
+        <p>Za bilo kakve upite ili komentare slobodno nas kontaktirajte putem donjih podataka.</p>
+        <div class="contact-info">
+            <p>Telefon: 123-456-789</p>
+            <p>Email: mail@mail.hr</p>
+            <p>Adresa: Ulica 123, Grad</p>
+        </div>
+        <div id="contact-form">
+            <form>
+                <label for="name">Ime:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Poruka:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Pošalji</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+            $("#aside-placeholder").load("aside.html");
+        });
+    </script>
+</body>
+</html>

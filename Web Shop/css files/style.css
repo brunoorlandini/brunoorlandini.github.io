@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222831;
+    color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+   
+
+   
+}
+
+#header {
+    background-color: #00ADB5;
+    padding: 10px 20px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+#test{
+    display: flex;
+    flex-direction: row;
+    
+}
+aside{
+    margin-top: 20px;
+    margin-bottom: auto;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    width: 50%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#footer {
+    background-color: #00ADB5;
+    padding: 10px 20px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+button {
+   background-color: #00ADB5;
+   color: #EEEEEE;
+}
+
+button:hover{
+    background-color: #EEEEEE;
+    color: #00ADB5;
+}
+
+a:hover {
+    color: #00ADB5 ;
+}
+
+button {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    padding: 7px;
+}
+
+button:hover{
+    background-color: #EEEEEE;
+    color: #00ADB5;
+}
+
+a {
+    color: #EEEEEE;
+    text-decoration: none; 
+}
+
+ul {
+    list-style: none;
+}
+
+/* Media query za mobilne uređaje */
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 90%;
+    }
+}

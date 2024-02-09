@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="great Web tutorials">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<title>Glavna Stranica</title>
+<link rel="stylesheet" href="css files//style.css"> 
+
+<style>
+    .product-cat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+    .product-group{
+    
+        align-items:center;
+        justify-content: center;
+        padding: 20px;
+        background-color: 
+        #393E46;
+    }
+
+    .product-group img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+
+
+    }
+    li{
+        padding: 1px;
+    }
+    #banner{
+        background: linear-gradient(to right, #006E76, #00ADB5 );
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;     
+        align-items: center;   
+        justify-content: center;
+    }  
+</style>
+
+
+<body>
+    <header id="header-placeholder" class="main-font"></header>
+
+
+
+    
+
+
+<div id="test">
+
+  <aside id="aside-placeholder"></aside>
+
+    <div class="content">
+
+        <div id="banner">
+            <h3>Naučite Programiranje i Ostvarite Vaše Tehnološke Snove</h3>
+            <p>Želite postati majstor kodiranja? Onda ste na pravom mjestu!
+                 Naša platforma nudi sve što vam je potrebno da započnete ili
+                  unaprijedite svoju karijeru u programiranju. Od osnova do naprednih
+                   tehnika, naši stručnjaci će vas voditi kroz svaki korak.</p>
+            <a href="products.html"><button>Vidi više</button></a>
+
+            
+        </div>
+
+      
+        
+
+        <div id="products-cat">
+
+            <div class="product-group main-font">
+                <div>
+                    <img src="img/1 dif.jpg" alt="Product Group 1">
+                </div>
+                <div>
+                    <h2>Programski tečajevi za početnike</h2>
+                    <ul>
+                        <li><a href="poc-programiranje.html">Osnove programiranja</a></li>
+                        <li><a href="poc-python.html">Učenje Pythona za početnike</a></li>
+                        <li><a href="poc-webrazvoj.html">Web razvoj za početnike</a></li>
+                        <li><a href="poc-mobilno.html">Razvoj mobilnih aplikacija za početnike</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product-group main-font">
+                <div>
+                    <img src="img/2-dif.jpg" alt="Product Group 2">
+                </div>
+                <div>
+                    <h2>Napredni programski tečajevi</h2>
+                    <ul>
+                        <li><a href="mid-js.html">Napredno programiranje u JavaScriptu</a></li>
+                        <li><a href="mid-dubokoucenje.html">Napredno učenje dubokog učenja</a></li>
+                        <li><a href="mid-webrazvoj.html">Napredne tehnike web razvoja</a></li>
+                        <li><a href="mid-ai.html">Razvoj aplikacija s umjetnom inteligencijom</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product-group main-font">
+                <div>
+                    <img src="img/3 dif.jpg" alt="Product Group 3">
+                </div>
+                <div>
+                    <h2>Specijalizirani tečajevi</h2>
+                    <ul>
+                        <li><a href="pro-igre.html">Razvoj igara</a></li>
+                        <li><a href="pro-analiza.html">Analiza podataka i vizualizacija</a></li>
+                        <li><a href="pro-kripto.html">Kriptovalute i blockchain tehnologija</a></li>
+                        <li><a href="pro-sigurnost.html">Razvoj internetskih sigurnosnih vještina</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h1>Pretplati se na naš newsletter</h1>
+        <p>Primajte najnovije vijesti i ponude izravno u svoj inbox.</p>
+        <form action="#" method="post" id="newsletterForm">
+            <label for="email">Unesite svoj e-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Slažem se s uvjetima korištenja i dajem privolu za primanje newslettera.</label>
+            <button type="submit">Pretplati se</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+    <footer id="footer-placeholder" class="main-font"></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#header-placeholder").load("header.html");
+    $("#footer-placeholder").load("footer.html");
+    $("#aside-placeholder").load("aside.html");
+});
+</script>
+
+</body>
+</html>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css files/style.css">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .payment {
+            margin-top: 50px;
+            background-color: #393E46;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header id="header-placeholder"></header>
+
+    <div class="content">
+        <div class="payment">
+            <h1>Checkout</h1>
+            <form action="#" method="post">
+                <label for="firstName">Ime:</label>
+                <input type="text" id="firstName" name="firstName" required><br>
+                <label for="lastName">Prezime:</label>
+                <input type="text" id="lastName" name="lastName" required><br>
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="address">Adresa dostave:</label>
+                <textarea id="address" name="address" required></textarea><br>
+                <label for="comment">Komentar za dostavu:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br>
+                <label for="paymentMethod">Način plaćanja:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="creditCard">Kreditna kartica</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bankTransfer">Bankovni transfer</option>
+                </select><br>
+                <button type="submit">Potvrdi narudžbu</button>
+            </form>
+        </div>
+       
+    </div>
+    <footer id="footer-placeholder"></footer>
+    <script>
+        $(document).ready(function() {
+            $("#header-placeholder").load("../header.html");
+            $("#footer-placeholder").load("../footer.html");
+        });
+    </script>
+</body>
+</html>

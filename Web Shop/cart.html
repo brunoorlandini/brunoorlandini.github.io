@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css files/style.css">
+    <style>
+        .content {
+            padding: 20px;
+            width: 50%;
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cart-item {
+            background-color: #393E46;
+            color: #EEEEEE;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .cart-total {
+            background-color: #393E46;
+            color: #EEEEEE;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header-placeholder" class="main-font"></header>
+
+    
+
+
+    <div id="test">
+    
+      <aside id="aside-placeholder"></aside>
+    
+<div class="content">
+    <div class="cart-item">
+        <h2>Osnove programiranja</h2>
+        <p>Price: $49.99</p>
+        <button>Ukloni iz košarice</button>
+    </div>
+
+    <div class="cart-item">
+        <h2>Napredno programiranje u JavaScriptu</h2>
+        <p>Price: $59.99</p>
+        <button>Ukloni iz košarice</button>
+    </div>
+
+
+    <div class="cart-total">
+        <h2>Total: $109.98</h2>
+        <button type="button" onclick="window.location.href = 'checkout.html'">Checkout</button>
+
+    </div>
+</div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#header-placeholder").load("header.html");
+        $("#footer-placeholder").load("footer.html");
+        $("#aside-placeholder").load("aside.html");
+    });
+</script>
+
+</body>
+</html>
