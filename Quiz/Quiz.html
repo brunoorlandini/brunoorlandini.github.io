@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <div id="question-container"></div>
+    <button id="submit-btn">Submit</button>
+    <button id="reset-btn" style="display:none">Try Again</button>
+    <div id="result-container"></div>    
+  </div>
+ 
+  <script>
+    const quizData = [
+      {
+        question: "What is the capital of France?",
+        a: "New York",
+        b: "London",
+        c: "Paris",
+        d: "Berlin",
+        correct: "c",
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        a: "Earth",
+        b: "Mars",
+        c: "Jupiter",
+        d: "Venus",
+        correct: "b",
+      },
+      {
+        question: "What is the largest ocean on Earth?",
+        a: "Atlantic Ocean",
+        b: "Indian Ocean",
+        c: "Arctic Ocean",
+        d: "Pacific Ocean",
+        correct: "d",
+      },
+      {
+        question: "Who wrote 'Hamlet'?",
+        a: "Charles Dickens",
+        b: "William Shakespeare",
+        c: "Leo Tolstoy",
+        d: "Mark Twain",
+        correct: "b",
+      },
+      {
+        question: "What is the chemical symbol for gold?",
+        a: "Au",
+        b: "Ag",
+        c: "Ga",
+        d: "Ge",
+        correct: "a",
+      }
+    ];
+
+    let result = 0;
+    let questionIndex = 0;
+
+    const questionContainer = document.getElementById("question-container");
+    const resultContainer = document.getElementById("result-container");
+    const submitBtn = document.getElementById("submit-btn");
+    const resetBtn = document.getElementById("reset-btn");
+
+    function loadQuestion() {
+      const currentQuestion = quizData[questionIndex];
+      questionContainer.innerHTML = `
+        <h3>${currentQuestion.question}</h3>
+        <input type="radio" name="answer" value="a"> ${currentQuestion.a}<br>
+        <input type="radio" name="answer" value="b"> ${currentQuestion.b}<br>
+        <input type="radio" name="answer" value="c"> ${currentQuestion.c}<br>
+        <input type="radio" name="answer" value="d"> ${currentQuestion.d}<br>`;
+    }
+
+    function showScore() {
+      resultContainer.innerHTML = `<h3>Congratulations, you've scored: ${result}/${quizData.length}</h3>`;
+      questionContainer.style.display = "none";
+      resultContainer.style.display = "block";
+      submitBtn.style.display = "none";
+      resetBtn.style.display = "block";
+    }
+
+    submitBtn.addEventListener("click", () => {
+      const answers = document.getElementsByName("answer");
+      let selectedAnswer = "";
+      for (const answer of answers) {
+        if (answer.checked) {
+          selectedAnswer = answer.value;
+          break;
+        }
+      }
+      if (selectedAnswer === quizData[questionIndex].correct) {
+        result++;
+      }
+      questionIndex++;
+      if (questionIndex < quizData.length) {
+        loadQuestion();
+      } else {
+        showScore();
+      }
+    });
+
+    resetBtn.addEventListener("click", () => {
+      result = 0;
+      questionIndex = 0;
+      loadQuestion();
+      questionContainer.style.display = "block";
+      resultContainer.style.display = "none";
+      submitBtn.style.display = "block";
+      resetBtn.style.display = "none";
+    });
+
+    loadQuestion();
+  </script>
+</body>
+</html>
